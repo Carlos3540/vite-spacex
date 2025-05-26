@@ -1,0 +1,96 @@
+/* style.css */
+
+/* Reset básico y fuente espacial */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(ellipse at center, #000000 0%, #0d0d2b 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#views {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Estilo general de inputs y botones */
+input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #ff6a00;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff9500;
+}
+
+/* Vista de tarjetas de lanzamientos */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Menú inferior */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #111;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 12px;
+  flex: 1;
+}
+
+.bottom-nav button:hover {
+  color: #ff6a00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  button, input {
+    font-size: 14px;
+  }
+
+  .bottom-nav {
+    font-size: 12px;
+  }
+}
